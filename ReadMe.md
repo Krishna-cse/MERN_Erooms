@@ -19,3 +19,15 @@
     1. create Header Component
     2. npm i react-icons
 ```
+
+### server setup 
+1. create and run server
+```
+    1. create the server folder
+    2. npm i express
+    3. npm nodemon
+    4. create the code in index.js file
+    5. update the package.json type:module
+    6. in scripts, dev:nodemon index.js
+    6. npm run dev
+```

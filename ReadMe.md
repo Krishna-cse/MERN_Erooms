@@ -13,3 +13,9 @@
     2. create pages in src folder
     3. create routes in App.js
 ```
+
+3. create Header components/section
+```
+    1. create Header Component
+    2. npm i react-icons
+```

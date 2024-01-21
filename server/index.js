@@ -20,11 +20,19 @@ mongoose.connect(`mongodb+srv://itskrishnacse:${encodedPassword}@mern-erooms.iek
 const app = express();
 app.use(express.json())
 
-//middleware
 app.use("/api/user",userRouter)
 app.use("/api/auth", authRouter )
 
-
+//middleware
+app.use((err,req,res,next)=>{
+   const statusCode = err.statusCode || 500;
+   const message = err.message || 'Internal Server error'
+   return res.status(statusCode).json({
+      success:false,
+      statusCode,
+      message
+   })
+})
 
 app.listen(3000, () => {
   console.log("Server running on port 3000");

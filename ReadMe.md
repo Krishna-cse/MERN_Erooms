@@ -31,3 +31,8 @@
     6. in scripts, dev:nodemon index.js
     6. npm run dev
 ```
+
+2. Database connection
+```
+    1. npm i mongoose
+```

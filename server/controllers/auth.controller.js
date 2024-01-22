@@ -8,8 +8,10 @@ export const signup = async(req,res,next)=>{
     const newUser = new User({username,email,password:hashedPassword});
     try {
         await newUser.save();
-    res.status(201).json("user created successfully")
+        console.log(`User ${username} created successfully`);
+        res.status(201).json({ success: true, message: "User created successfully", user: newUser });
     } catch (error) {
-        next(errorHandler(550,'error from the function'))
+        console.error(`Error creating user: ${error.message}`);
+        next(errorHandler(550, 'Error from the function'));
     }
 }

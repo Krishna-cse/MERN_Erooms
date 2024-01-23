@@ -33,6 +33,13 @@ Link: https://redux-toolkit.js.org/tutorials/quick-start
 
 ```
 
+6. Adding Google OAuth functionality
+```
+    1. https://firebase.google.com/
+    2. npm install firebase
+
+```
+
 ### server setup 
 1. create and run server
 ```

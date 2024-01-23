@@ -20,6 +20,19 @@
     2. npm i react-icons
 ```
 
+4. react redux setup
+```
+Link: https://redux-toolkit.js.org/tutorials/quick-start
+    to store the user profile and show it, after login
+```
+5. add redux persist
+```
+    To store the information in local storage
+    Every time refresh the user will logout automatically to handle the error
+    In Terminal client side: npm i redux-persist 
+
+```
+
 ### server setup 
 1. create and run server
 ```
